@@ -1,5 +1,7 @@
 public class ArrayChecker {
+    
     int[] myArray;
+    
     boolean isSymmetrical(int[] myArray){
         //check if first and last element are symmetrical
         int i = 0;
@@ -12,6 +14,7 @@ public class ArrayChecker {
         }
         return true;
     }
+    
     public void reverse(int[] myArray){
         int i = 0;
         int [] reversedArray;
@@ -21,12 +24,10 @@ public class ArrayChecker {
             reversedArray[i] = myArray[(myArray.length - 1 - i)];
             System.out.print(reversedArray[i]);
             i++;
-        }
-        
+        } 
     }
 
     public static void main(String[] args){
-        {
             int[] myArray = {5, 4, 3, 3, 4, 8};
             ArrayChecker thisArray = new ArrayChecker();
             if (thisArray.isSymmetrical(myArray) == true) {
@@ -35,6 +36,5 @@ public class ArrayChecker {
                 System.out.println("The array is not symmetrical.");
             }
             thisArray.reverse(myArray);
-        }
     }
 }
